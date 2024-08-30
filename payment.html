@@ -18,7 +18,7 @@
         <img src="./assets/images/dibber.svg" alt="dibber logo" />
       </div>
       <div class="transaction-container"></div>
-      <button class="generate">generate</button>
+      <button class="generate">Download</button>
     </div>
     <div class="loading">
       <img src="./assets/images/loading.svg" />
@@ -27,7 +27,7 @@
     <script>
       document.querySelector(".generate").addEventListener("click", () => {
         const element = document.querySelector(".transaction-container");
-        html2pdf().from(element).save("sample.pdf");
+        html2pdf().from(element).save("Receipt.pdf");
       });
     </script>
     <script src="./js/transaction.js"></script>
