@@ -1,7 +1,7 @@
 const container = document.querySelector(".transaction-container");
 
 const fetchTransactionInfo = async () => {
-  const response = await fetch("data/transaction.json");
+  const response = await fetch("./data/transaction.json");
   const data = await response.json();
   //tweak the status code for rendering different components
   return { ...data, status: 200 };
@@ -9,18 +9,17 @@ const fetchTransactionInfo = async () => {
 
 //return the promise
 fetchTransactionInfo().then((data) => {
-  console.log(data);
   let heading;
   let status_IMG;
   if (data.status === 200) {
     heading = "Transaction Successful";
-    status_IMG = "/assets/images/successful.svg";
+    status_IMG = "./assets/images/successful.svg";
   } else if (data.status === 400) {
     heading = "Transaction Failed";
-    status_IMG = "/assets/images/failed.svg";
+    status_IMG = "./assets/images/failed.svg";
   } else {
     heading = "Transaction Pending";
-    status_IMG = "/assets/images/pending.svg";
+    status_IMG = "./assets/images/pending.svg";
   }
 
   container.innerHTML += `

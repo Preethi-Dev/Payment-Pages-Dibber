@@ -2,9 +2,8 @@ const primary = document.querySelector(".fee-details__primary");
 const secondary = document.querySelector(".fee-details__secondary");
 
 const fetchFeesData = async () => {
-  const data = await fetch("data/db.json");
+  const data = await fetch("./data/db.json");
   const json = await data.json();
-  console.log(json);
   return json;
 };
 
