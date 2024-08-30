@@ -1,0 +1,35 @@
+{
+  "fees": {
+    "Id": "77DB7A4F-FD2F-4360-944D-CB9F7EF32D44",
+    "ChildId": "IN-K-0000000202",
+    "CustomerName": "Surabhi Kaur",
+    "CustomerEmail": "Surabhi@mail.com",
+    "CustomerPhone": "+917500578965",
+    "PaymentPlan": "Year",
+    "AcademicYear": "2024-25",
+    "TotalInvoiceValue": "₹350000",
+    "BusinessUnitName": "Gurgaon - Sector 50",
+    "LegalEntityName": "Dibber Schools India Private Limited",
+    "LegalMerchantID": "UATDIBBV2",
+    "ProductLineItems": [
+      {
+        "ItemNo": 3,
+        "Category": "Condition",
+        "CategoryType": "Fee",
+        "CategorySubtype": "Annual",
+        "Product": "Annual Fee",
+        "Quantity": 1,
+        "NetPrice": "₹40000"
+      },
+      {
+        "ItemNo": 4,
+        "Category": "Condition",
+        "CategoryType": "Fee",
+        "CategorySubtype": "Admission",
+        "Product": "Admission Fee",
+        "Quantity": 1,
+        "NetPrice": "₹30000"
+      }
+    ]
+  }
+}
