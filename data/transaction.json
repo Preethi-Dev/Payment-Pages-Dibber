@@ -1,0 +1,9 @@
+{
+  "transaction": {
+    "transactionId": "TXN123456789",
+    "authorizationStatus": "Payment successful",
+    "transactionDate": "14:55, 11-March-2024",
+    "paymentType": "Credit Card",
+    "bankRefNo": "BR123456789"
+  }
+}

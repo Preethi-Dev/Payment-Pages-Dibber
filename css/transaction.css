@@ -1,0 +1,21 @@
+.transaction-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.data > span:nth-child(2) {
+  width: 10.1875rem;
+}
+
+.data-container {
+  width: auto;
+}
+
+@media screen and (min-width: 500px) {
+  .data {
+    gap: 2rem;
+  }
+}
