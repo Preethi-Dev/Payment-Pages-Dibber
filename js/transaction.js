@@ -1,4 +1,5 @@
 const container = document.querySelector(".transaction-container");
+const loader = document.querySelector(".loading");
 
 const fetchTransactionInfo = async () => {
   const response = await fetch("./data/transaction.json");
@@ -11,6 +12,9 @@ const fetchTransactionInfo = async () => {
 fetchTransactionInfo().then((data) => {
   let heading;
   let status_IMG;
+  setTimeout(() => {
+    loader.classList.add("hidden");
+  }, 500);
   if (data.status === 200) {
     heading = "Transaction Successful";
     status_IMG = "./assets/images/successful.svg";

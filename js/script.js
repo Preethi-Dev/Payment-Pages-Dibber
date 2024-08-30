@@ -1,5 +1,6 @@
 const primary = document.querySelector(".fee-details__primary");
 const secondary = document.querySelector(".fee-details__secondary");
+const loader = document.querySelector(".loading");
 
 const fetchFeesData = async () => {
   const data = await fetch("./data/db.json");
@@ -10,7 +11,9 @@ const fetchFeesData = async () => {
 //fetch and store the fees data
 fetchFeesData()
   .then((data) => {
-    console.log(data);
+    setTimeout(() => {
+      loader.classList.add("hidden");
+    }, 500);
     const productLineItems = data.fees.ProductLineItems;
     const netPrice = productLineItems.reduce((total, item) => {
       const price = Number(item.NetPrice.slice(1));

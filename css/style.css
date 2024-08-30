@@ -26,6 +26,22 @@ a {
 }
 
 /* Base Styles */
+.loading {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--text-color);
+}
+
+.hidden {
+  display: none;
+}
+
 body {
   background: #e1eae2;
   display: flex;
